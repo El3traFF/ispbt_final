@@ -1,0 +1,149 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #FBF6F3;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 132px;
+    justify-content: center; 
+    background-color: #ffe7e7; 
+    border-bottom: 1px solid #e0e0e0; 
+}
+
+.logo {
+    margin-right: 60px;
+    display: flex;
+    justify-content: center; 
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu li:not(:last-child) {
+    margin-right: 45px;
+}
+
+.menu a {
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.product-section {
+    display: flex;
+    gap: 30px;
+    padding-top: 120px;
+}
+
+.product-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-title {
+    width: 336px;
+    color: #000;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.product-price {
+    color: #AD0306;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+
+.product-sizes {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 60px;
+}
+
+.size {
+    color: #A19FA0;
+    font-size: 13px;
+    padding: 8px 12px;
+    border: 1px solid #A19FA0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.size.selected {
+    color: #B93536;
+    border-color: #B93536;
+}
+
+.size.available{
+    color: #000;
+    border-color: #000;
+}
+
+.shipping-info {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+@media (max-width: 1110px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .product-section {
+        flex-direction: column;
+    }
+    
+    .header {
+        flex-direction: column;
+        align-items: center; 
+        height: auto;
+        padding: 20px 0;
+    }
+    
+    .logo {
+        margin-bottom: 20px;
+        margin-right: 0; 
+    }
+    
+    .product-title {
+        width: 100%;
+    }
+}
